@@ -1,115 +1,165 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <title>A Cloud Resume by Dylan</title>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
 
-    
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ddd;
+}
 
-    
+.header h1 {
+  font-size: 50px;
+}
 
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
 
-    
-  </head>
-  <body>
-    
-<main>
-  <div class="container py-4">
-    <header class="pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-        <span class="fs-4">Dylan</span>
-      </a>
-    </header>
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
 
-    <div class="p-6 mb-5 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Work Experience</h1>
-        <p class="col-md-7 fs-5">I am a 11th year high-school student at Thompson High School and I am pursuing a career in Software Engineering. I first started learing about coding last summer during the lockdown stage of the pandemic, and the Cloud Resume Challenge will be my first ever computer project.</p>
-      </div>
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Dylan Walker</h1>
+  <p>I am a 11th year high-school student at Thompson High School and I am pursuing a career in Software Engineering. I first started learing about coding last summer during the lockdown stage of the pandemic, and the Cloud Resume Challenge will be my first ever computer project.</p>
+</div>
+
+<div class="topnav">
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Groundskeeper</h2>
+      <h5>From 06/2020 to Present</h5>
+      <p>Maintains landscape at a 144-acre property with multiple lawns, pool, and two houses.</p> 
+        <p>Performs pool maintenance, clean pool deck, and keep it ready for guests.</p>
+        <p>Operates riding lawn mowers.</p>
+        <p>Regularly mow, rake, and clean lawns.</p> 
+        <p>Clean property of dead trees, litter, weeds, and other garbage. </p>
+        <p>Comfortable using a wide range of power tools.</p>
     </div>
-
-    <div class="row align-items-md-stretch">
-      <div class="col-md-6">
-        <div class="h-100 p-5 text-white bg-dark rounded-3">
-          <h2>Change the background</h2>
-          <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-          <button class="btn btn-outline-light" type="button">Example button</button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Add borders</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-          <button class="btn btn-outline-secondary" type="button">Example button</button>
-        </div>
-      </div>
+    
+    <div class="card">
+      <h2>Ranch Hand</h2>
+      <h5>From 05/2021 to 09/2021</h5>
+      <p>Worked with the owner to handle horses.</p>
+      <p>Cleaned around a small ranch property.</p>
+      <p>Provided regular care for livestock and other animals on the ranch.</p>
+      <p>Watered and took care of plants and herbs grown on the ranch.</p>
     </div>
-
-    <footer class="pt-3 mt-4 text-muted border-top">
-      &copy; 2022
-    </footer>
   </div>
-</main>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Skills</h2>
+      <p>Coding</p>
+        <p>Welding</p>
+        <p>Circuitry</p>
+        <p>CAD Design</p>
+        <p>Soldering</p>
+        <p>Proficency with Powertools</p>
+        <p>Playing a Ukulele</p>
+    </div>
+    <div class="card">
+      <h2>Interests</h2>
+      <p>Traveling
+        <p>Computers and Coding</p>
+        <p>Cars</p>
+        <p>Wakeboarding</p>
+        <p>Skim Surfing</p>
+      <p>Classic Rock Music</p>
+    </div>
+    </div>
+  </div>
+</div>
 
+<div class="footer">
+  <h2>people have visited this website!</h2>
+</div>
 
-    
-  </body>
+</body>
 </html>
+
+

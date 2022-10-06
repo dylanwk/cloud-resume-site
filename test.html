@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,5 +10,96 @@
 </head>
 <body>
     
+    <script>
+        // NavBar Function
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+        });
+    
+        // Return to Top Function
+    
+            const backToTopButton = document.querySelector("#back-to-top")
+    
+            window.addEventListener("scroll", scrollFunction);
+    
+            function scrollFuntion() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = "block";
+                }
+                else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+    
+        </script>
+
+    <!--Scroll-->
+    <button id="back-to-top">
+        
+    </button>
+    <div class="background">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#WorkExperience">Work Experience</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Dylan Walker</h1>
+        <p>Aspiring Software Engineer</p>
+    </div>
+    
+    <!--AboutMe-->
+
+    <section id="AboutMe">
+        <div class="title-text">
+            <p>About Me</p>
+            <h1>My description about me</h1>
+        </div>
+        <div class="AboutMe-box">
+            <p>I am a 11th year high-school student and I am pursuing a career in Software Engineering. I first started learing about coding last summer during the lockdown stage of the pandemic, and the Cloud Resume Challenge will be my first ever computer project.</p>
+        </div>
+    </section>
+
+    <!--WorkExperience-->
+
+    <section id="WorkExperience">
+        <div class="title-text">
+            <p>Work Experience</p>
+            <h1>My very difficult jobs</h1>
+        </div>
+        <div class="AboutMe-box">
+            <p>First Job</p>
+        </div>
+    </section>
+
+    <!--Skills-->
+
+    <section id="Skills">
+        <div class="title-text">
+            <p>Skills</p>
+            <h1>They are very cool skills</h1>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section id="Contact">
+        <div class="Contact-title">
+            <h1 class="Contact-title">Contact Me</h1>
+            <p>(123) 456-7890</p>
+            <p>example@example.com</p>
+        </div>
+    </section>
+
+
+    
+
 </body>
 </html>

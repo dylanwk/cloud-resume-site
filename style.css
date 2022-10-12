@@ -66,7 +66,7 @@
 }
 .title-text{
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
 }
 .title-text p{
     margin: auto;
@@ -82,13 +82,12 @@
     font-size: 15px;
 }
 .AboutMe-box{
-    text-align: center;
+    text-align: right;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 15px;
     font-weight: 600;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 200px;
 }
 
 /*--WorkExperience--*/
@@ -96,8 +95,21 @@
 #WorkExperience{
     width: 100%;
     padding: 70px 0;
-    height: 550px;
+    height: 700px;
     background: #efefef;
+}
+
+.WE-box{
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 600;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.WE-title{
+    text-align: center;
+    padding-top:60px;
+    font-size: 15px;
 }
 
 /*--Skills--*/
@@ -127,25 +139,3 @@
 
 /*--Scroll--*/
 
-#back-to-top{
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 26px;
-    width: 50px;
-    height: 50px;
-    background-color:#fff;
-    color: #333;
-    cursor: pointer;
-    outline: none;
-    border: 3px solid #009688;
-    border-radius: 50%;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-property: background-color, color;
-}
-#back-to-top:hover, #back-to-top:focus {
-    background-color: #009688;
-    color: #fff;
-}

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Site</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
     
@@ -17,33 +17,15 @@
             speedAsDuration: true
         });
     
-        // Return to Top Function
-    
-            const backToTopButton = document.querySelector("#back-to-top")
-    
-            window.addEventListener("scroll", scrollFunction);
-    
-            function scrollFuntion() {
-                if (window.pageYOffset > 300) {
-                    backToTopButton.style.display = "block";
-                }
-                else {
-                    backToTopButton.style.display = "none";
-                }
-            }
-    
-        </script>
+    </script>
 
-    <!--Scroll-->
-    <button id="back-to-top">
-        
-    </button>
+    
     <div class="background">
         <div class="navbar">
             <nav>
                 <ul>
                     <li><a href="#AboutMe">About Me</a></li>
-                    <li><a href="#WorkExperience">Work Experience</a></li>
+                    <li><a href="#WorkExperience">Employment History</a></li>
                     <li><a href="#Skills">Skills</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
@@ -71,11 +53,36 @@
 
     <section id="WorkExperience">
         <div class="title-text">
-            <p>Work Experience</p>
-            <h1>My very difficult jobs</h1>
+            <p>Employment History</p>
         </div>
-        <div class="AboutMe-box">
-            <p>First Job</p>
+        <div class="WE-title">
+            <h1>ScaleSec Intern, July 2022 to August 2022</h1>
+        </div>
+        <div class="WE-box">
+            <p>
+                Worked with Amazon Web Services to create a website by using various cloud applications.
+                <br>Along with using various coding languages including JSON, Python, and JavaScript.
+            </p>
+        </div>
+        <div class="WE-title">
+            <h1>GroundsKeeper, June 2020 to October 2022</h1>
+        </div>
+        <div class="WE-box">
+            <P>Maintains landscape at a 144-acre property with multiple lawns, pool, and two houses.
+                <br> Performs pool maintenance, clean pool deck, and keep it ready for guests.
+                <br> Regularly mow, rake, and clean lawns.
+                <br>Clean property of dead trees, litter, weeds, and other garbage.
+                <br>Comfortable using a wide range of power tools.
+            </p>
+        </div>
+        <div class="WE-title">
+            <h1>Ranch Hand, June 2020 to September 2020</h1>
+        </div>
+        <div class="WE-box">
+            <p> Worked with the owner to handle horses.
+                <br>Provided regular care for livestock and other animals on the ranch.
+                <br>Watered and took care of plants and herbs grown on the ranch.
+            </p>
         </div>
     </section>
 

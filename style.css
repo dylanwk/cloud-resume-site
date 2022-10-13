@@ -62,7 +62,7 @@
 #AboutMe{
     width: 100%;
     padding: 70px 0;
-    height: 550px;
+    height: 500px;
 }
 .title-text{
     text-align: center;
@@ -71,7 +71,8 @@
 .title-text p{
     margin: auto;
     font-size: 40px;
-    color: #009688;
+    color: black;
+    font-family: serif;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -102,7 +103,7 @@
 .WE-box{
     text-align: center;
     padding-top: 30px;
-    font-weight: 600;
+    font-weight: 450;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -117,8 +118,26 @@
 #Skills{
     width: 100%;
     padding: 70px 0;
-    height: 550px;
+    height: 500px;
 }
+.skill-box{
+    margin-left: 25%;
+    width: 100%;
+    margin-top: 40px;
+}
+.talent {  
+    float: left;
+    padding-left: 60px;
+    margin-top: 70px;
+    list-style: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+ }
+
+ li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 
 /*--Contact--*/
 

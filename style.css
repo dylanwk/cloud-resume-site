@@ -83,13 +83,25 @@
     font-size: 15px;
 }
 .AboutMe-box{
-    text-align: right;
+    text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 15px;
     font-weight: 600;
-    padding-right: 200px;
 }
+.AboutMe-box h1{
+    padding-bottom: 55px;
+    font-size: 35px;
+    padding-top: 30px;
+}
+.AboutMe-box p{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: 450;
+    font-size: 22px;
+}
+
+
 
 /*--WorkExperience--*/
 

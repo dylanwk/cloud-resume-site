@@ -56,6 +56,27 @@
     font-size: 65px;
     margin-top: 40px;
 }
+.counter {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+  
+  @media screen and (max-width: 770px) {
+    .navbar {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: smaller;
+    }
+    .content h1 {
+        font-size: 50px;
+    }
+    .navbar li:not(:last-child) {
+        margin-bottom: 30px;
+    }}
+
+
 
 /*--AboutMe--*/
 
@@ -95,12 +116,25 @@
     padding-top: 30px;
 }
 .AboutMe-box p{
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 23%;
+    margin-right: 23%;
     font-weight: 450;
-    font-size: 22px;
+    font-size: 19px;
 }
 
+@media screen and (max-width: 770px) {
+    .AboutMe-box h1{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .AboutMe-box p{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 30px;
+    }
+}
 
 
 /*--WorkExperience--*/
@@ -116,13 +150,27 @@
     text-align: center;
     padding-top: 30px;
     font-weight: 450;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .WE-title{
     text-align: center;
     padding-top:60px;
     font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 770px){
+    #WorkExperience{
+        height: 975px;
+    }
+    .title-text p{
+        font-size: 35px;
+    }
+    .WE-title{
+        font-size: 13px;
+    }
 }
 
 /*--Skills--*/
@@ -133,13 +181,14 @@
     height: 500px;
 }
 .skill-box{
-    margin-left: 25%;
     width: 100%;
     margin-top: 40px;
+    align-items: center;
 }
+
 .talent {  
     float: left;
-    padding-left: 60px;
+    padding-left: 240px;
     margin-top: 70px;
     list-style: none;
     font-weight: 600;
@@ -148,6 +197,18 @@
 
  li:not(:last-child) {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 770px) {
+    #Skills{ 
+        height: 600px;
+    }
+    .talent{
+        margin-top: 20px;
+        margin-bottom: 5px;
+        padding-left: 30px;
+        align-self:center;
+    }
 }
 
 
@@ -168,5 +229,4 @@
     padding-bottom: 40px;
 }
 
-/*--Scroll--*/
 

@@ -83,7 +83,7 @@
 #AboutMe{
     width: 100%;
     padding: 70px 0;
-    height: 500px;
+    height: 475px;
 }
 .title-text{
     text-align: center;
@@ -142,7 +142,7 @@
 #WorkExperience{
     width: 100%;
     padding: 70px 0;
-    height: 700px;
+    height: 680px;
     background: #efefef;
 }
 
@@ -178,7 +178,7 @@
 #Skills{
     width: 100%;
     padding: 70px 0;
-    height: 500px;
+    height: 450px;
 }
 .skill-box{
     width: 100%;
